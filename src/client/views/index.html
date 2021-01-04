@@ -2,43 +2,74 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
-    <title>Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Naming your feelings</title>
+    <!-- Load Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
   </head>
 
   <body>
     <header>
-      <div class="">Logo</div>
-      <div class="">navigation</div>
+      <h1 id="title">How Do You Feel Today?</h1>
     </header>
-
     <main>
-      <section>
-        <form class="" onsubmit="return app.handleSubmit(event)">
+      <section id="form">
+        <form onsubmit="return app.handleSubmit(event)">
           <input
-            id="name"
+            class="text-input"
             type="text"
             name="input"
             value=""
-            placeholder="Name"
+            placeholder="Tell me, how do you feel today..."
           />
           <input
+            class="primary-btn"
             type="submit"
             name=""
-            value="submit"
+            value="Name it"
             onclick="return app.handleSubmit(event)"
             onsubmit="return app.handleSubmit(event)"
           />
         </form>
       </section>
 
-      <section>
-        <strong>Form Results:</strong>
-        <div id="results"></div>
+      <section id="feelings">
+        <div class="circle" id="happiness-circle">Happiness</div>
+        <div class="circle" id="sadness-circle">Sadness</div>
+        <div class="circle" id="anger-circle">Anger</div>
+        <div class="circle" id="fear-circle">Fear</div>
+        <div class="circle" id="disgust-circle">Disgust</div>
+      </section>
+
+      <section id="results">
+        <h2 id="results-title">Your feelings is</h2>
+        <h4 id="feelings-title" class="happiness-title">Happiness ☀️</h4>
+        <q class="quote">Viva La vida!</q>
+        <!-- <h4 id="sadness-title">Sadness ☁️</h4>
+        <h4 id="anger-title">Anger ⚡️</h4>
+        <h4 id="fear-title">Fear ❗️</h4>
+        <h4 id="disgust-title">Disgust 🚫</h4> -->
       </section>
     </main>
 
-    <footer>
-      <p>This is a footer</p>
-    </footer>
+    <footer>&copy Ghada, Udacity FEND Program</footer>
   </body>
 </html>

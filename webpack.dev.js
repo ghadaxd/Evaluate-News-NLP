@@ -25,6 +25,14 @@ module.exports = {
         test: /\.scss$/,
         use: ["style-loader", "css-loader", "sass-loader"],
       },
+      {
+        test: /\.(png|webmanifest|manifest)$/i,
+        loader: "file-loader",
+        options: {
+          name: "[name].[ext]",
+          outputPath: "favicon",
+        },
+      },
     ],
   },
   plugins: [

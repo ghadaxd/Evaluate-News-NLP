@@ -1,17 +1,16 @@
 import { checkForName } from "./js/nameChecker";
 import { handleSubmit } from "./js/formHandler";
 
-console.log(checkForName);
+// Loading favicon
+import "./views/favicon/apple-touch-icon.png";
+import "./views/favicon/favicon-32x32.png";
+import "./views/favicon/favicon-16x16.png";
+import "./views/favicon/site.webmanifest";
 
-alert("I EXIST");
-console.log("CHANGE!!");
-
-//Here we should import our scss files.
-// ex: import './styles/resets.scss'
-import "./styles/resets.scss";
+// scss files.
 import "./styles/base.scss";
-import "./styles/footer.scss";
 import "./styles/form.scss";
-import "./styles/header.scss";
+import "./styles/circle.scss";
+import "./styles/results.scss";
 
 export { checkForName, handleSubmit };

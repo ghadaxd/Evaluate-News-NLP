@@ -1,0 +1,47 @@
+@import "base.scss";
+
+h2 {
+  color: $primary-font-color;
+  text-align: center;
+  margin-top: 0;
+}
+
+h4 {
+  color: $secondary-elem-color;
+  text-align: center;
+  margin-top: 0;
+  width: 100%;
+}
+
+#results-title,
+#feelings-title {
+  display: none;
+}
+
+.happiness-title {
+  background-color: $happiness;
+}
+
+.sadness-title {
+  background-color: $sadness;
+}
+
+.anger-title {
+  background-color: $anger;
+}
+
+.fear-title {
+  background-color: $fear;
+}
+
+.disgust-title {
+  background-color: $disgust;
+}
+
+.quote {
+  border-left: solid $primary-elem-color 0.3em;
+  color: $primary-font-color;
+  text-align: center;
+  width: 50%;
+  background-color: $secondary-elem-color-opacity;
+}

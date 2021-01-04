@@ -1,0 +1,94 @@
+@import "base.scss";
+
+$circle-width-lg: 7em;
+$circle-width-sm: 5em;
+$border-radius-lg: 10em;
+$border-radius-sm: 3em;
+
+.circle {
+  height: $circle-width-lg;
+  width: $circle-width-lg;
+  border-radius: $border-radius-lg;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $secondary-elem-color;
+  animation: pulse-bounce 2s 1;
+  animation-direction: alternate;
+  animation-fill-mode: both;
+  position: relative;
+  margin: 0.5em;
+}
+
+// .selected {
+//   animation: bounce 3s infinite;
+// }
+
+#happiness-circle {
+  background-color: $happiness;
+}
+
+#sadness-circle {
+  background-color: $sadness;
+  animation-delay: 1s;
+}
+
+#anger-circle {
+  background-color: $anger;
+  animation-delay: 2s;
+}
+
+#fear-circle {
+  background-color: $fear;
+  animation-delay: 3s;
+}
+
+#disgust-circle {
+  background-color: $disgust;
+  animation-delay: 4s;
+}
+
+@keyframes pulse-bounce {
+  0% {
+    width: $circle-width-lg + 2;
+    height: $circle-width-lg + 2;
+    top: 0;
+  }
+  50% {
+    width: $circle-width-lg;
+    height: $circle-width-lg;
+    top: 1em;
+  }
+  100% {
+    width: $circle-width-lg + 2;
+    height: $circle-width-lg + 2;
+    top: 0;
+  }
+}
+
+/* For mobile and tablet */
+@media (max-width: 450px), (max-width: 890px) and (min-width: 700px) {
+  .circle {
+    width: $circle-width-sm;
+    height: $circle-width-sm;
+    border-radius: $border-radius-sm;
+  }
+
+  @keyframes pulse-bounce {
+    0% {
+      width: $circle-width-sm + 1;
+      height: $circle-width-sm + 1;
+      top: 0;
+    }
+    50% {
+      width: $circle-width-sm;
+      height: $circle-width-sm;
+      top: 1em;
+    }
+    100% {
+      width: $circle-width-sm + 1;
+      height: $circle-width-sm + 1;
+      top: 0;
+    }
+  }
+}
