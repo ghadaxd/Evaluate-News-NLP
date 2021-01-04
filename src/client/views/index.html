@@ -34,20 +34,24 @@
       <section id="form">
         <form onsubmit="return app.handleSubmit(event)">
           <input
+            id="feelings-input"
             class="text-input"
             type="text"
             name="input"
             value=""
             placeholder="Tell me, how do you feel today..."
+            required
+            maxlength="100"
+            pattern="/([A-Z])\w+/gi"
+            title="Use words only without numbers or any special character."
           />
-          <input
-            class="primary-btn"
+          <button
             type="submit"
-            name=""
-            value="Name it"
-            onclick="return app.handleSubmit(event)"
+            class="primary-btn"
             onsubmit="return app.handleSubmit(event)"
-          />
+          >
+            Name it
+          </button>
         </form>
       </section>
 

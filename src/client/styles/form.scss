@@ -7,14 +7,20 @@ form {
   flex-direction: column;
 }
 
-input {
+input,
+button {
   border-radius: $border-radius;
   border-style: none;
   padding: 0.5em 1em;
+}
 
-  &:focus {
-    outline: none;
-  }
+button:focus {
+  background-color: $secondary-elem-color-opacity;
+  color: $primary-font-color;
+  outline: none;
+}
+input:focus {
+  outline: $primary-elem-color solid 0.2em;
 }
 
 .text-input {

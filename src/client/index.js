@@ -1,4 +1,4 @@
-import { checkForName } from "./js/nameChecker";
+import { validateInput } from "./js/inputValidator";
 import { handleSubmit } from "./js/formHandler";
 
 // Loading favicon
@@ -13,4 +13,4 @@ import "./styles/form.scss";
 import "./styles/circle.scss";
 import "./styles/results.scss";
 
-export { checkForName, handleSubmit };
+export { validateInput, handleSubmit };
