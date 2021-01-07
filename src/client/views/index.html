@@ -42,7 +42,7 @@
             placeholder="Tell me, how do you feel today..."
             required
             maxlength="100"
-            pattern="/([A-Z])\w+/gi"
+            pattern="([A-Za-z]+\s*)+"
             title="Use words only without numbers or any special character."
           />
           <button
@@ -65,12 +65,9 @@
 
       <section id="results">
         <h2 id="results-title">Your feelings is</h2>
-        <h4 id="feelings-title" class="happiness-title">Happiness ☀️</h4>
-        <q class="quote">Viva La vida!</q>
-        <!-- <h4 id="sadness-title">Sadness ☁️</h4>
-        <h4 id="anger-title">Anger ⚡️</h4>
-        <h4 id="fear-title">Fear ❗️</h4>
-        <h4 id="disgust-title">Disgust 🚫</h4> -->
+        <h4 id="feelings-title"></h4>
+        <q id="feelings-quote"></q>
+        <p id="error-msg"></p>
       </section>
     </main>
 

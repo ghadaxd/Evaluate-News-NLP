@@ -13,8 +13,8 @@ const app = express();
 const cors = require("cors");
 app.use(cors());
 
-app.use(express.static("dist"));
-// app.use(express.static(path.resolve("src/client")));
+// app.use(express.static("dist"));
+app.use(express.static(path.resolve("src/client")));
 
 console.log(__dirname);
 
@@ -25,9 +25,9 @@ app.get("/", function (req, res) {
 
 // designates what port the app will listen to for incoming requests
 app.listen(8080, function () {
-  console.log("Example app listening on port 8080!");
+  console.log("Listening on port 8080!");
 });
 
-app.get("/test", function (req, res) {
+app.get("/feelings", function (req, res) {
   res.send(mockAPIResponse);
 });
