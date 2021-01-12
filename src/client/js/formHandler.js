@@ -5,12 +5,6 @@ function handleSubmit(event) {
   // clean up the text
   formText = formText.trim().toLowerCase();
 
-  // fetch("http://localhost:8080/test")
-  //   .then((res) => res.json())
-  //   .then(function (res) {
-  //     document.getElementById("results").innerHTML = res.message;
-  //   });
-
   // Fetch api
   const axios = require("axios");
   axios
