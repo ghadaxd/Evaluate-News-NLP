@@ -14,14 +14,10 @@ function handleSubmit(event) {
   // Fetch api
   const axios = require("axios");
   axios
-    .get("http://localhost:8080/feelings", {
-      params: {
-        txt: formText,
-      },
-    })
-    .then(function (response) {
+    .get("http://localhost:8080/feelings?txt=" + formText)
+    .then((response) => {
       // in case of success (200)
-      app.generateFeelings(response.data.sentimented_entity_list);
+      app.generateFeelings(response.data);
     })
     .catch((error) => {
       // in case of failure
