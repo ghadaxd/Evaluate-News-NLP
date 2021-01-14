@@ -33,7 +33,7 @@ This project has a local server, server side code, and client side code.
 
 `http://localhost:8080/`
 
-#### Finaly, to test the app, try ...
+#### Finaly, to test the app, try one of these ...
 
 `I feel so happy`
 
@@ -50,10 +50,10 @@ This project has a local server, server side code, and client side code.
 - Input validation rules (Done in HTML):
 
   1. Not empty
-  2. Max length is 100
-  3. No script code
-  4. No numbers
-  5. No spaces
-  6. No urls or any special character
+  1. Max length is 100
+  1. No script code
+  1. No numbers
+  1. No spaces
+  1. No urls or any special character
 
 - Used a simple custom dictionary in Sentiment Analysis API for feelings entities in reference to this [article] (https://your-way.org.uk/naming-your-feelings/)
