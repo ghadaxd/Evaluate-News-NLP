@@ -36,19 +36,24 @@ This project has a local server, server side code, and client side code.
 #### Finaly, to test the app, try ...
 
 `I feel so happy`
+
 `I am board today`
+
 `These colors makes me angry`
+
 `I am afraid to not pass the exam`
+
 `I dislike this kind of texture`
 
 ## Notes
 
 - Input validation rules (Done in HTML):
-  1- Not empty
-  2- Max length is 100
-  3- No script code
-  4- No numbers
-  5- No spaces
-  6- No urls or any special character
+
+  1. Not empty
+  2. Max length is 100
+  3. No script code
+  4. No numbers
+  5. No spaces
+  6. No urls or any special character
 
 - Used a simple custom dictionary in Sentiment Analysis API for feelings entities in reference to this [article] (https://your-way.org.uk/naming-your-feelings/)
