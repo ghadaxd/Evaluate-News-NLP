@@ -56,4 +56,4 @@ This project has a local server, server side code, and client side code.
   1. No spaces
   1. No urls or any special character
 
-- Used a simple custom dictionary in Sentiment Analysis API for feelings entities in reference to this [article] (https://your-way.org.uk/naming-your-feelings/)
+- Used a simple custom dictionary in Sentiment Analysis API for feelings entities in reference to this [article](https://your-way.org.uk/naming-your-feelings/)
