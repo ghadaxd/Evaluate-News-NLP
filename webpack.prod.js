@@ -15,6 +15,7 @@ module.exports = {
     libraryTarget: "var",
     library: "app",
   },
+  devtool: "source-map",
   optimization: {
     minimizer: [new TerserPlugin({}), new OptimizeCSSAssetsPlugin({})],
   },
@@ -28,6 +29,14 @@ module.exports = {
       {
         test: /\.scss$/,
         use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
+      },
+      {
+        test: /\.(png|webmanifest|manifest)$/i,
+        loader: "file-loader",
+        options: {
+          name: "[name].[ext]",
+          outputPath: "favicon",
+        },
       },
     ],
   },
