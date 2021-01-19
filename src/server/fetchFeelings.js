@@ -15,7 +15,7 @@ const getFeelingsMeaning = (text) => {
     .then((response) => {
       // in case of success (200)
       console.log(response.data);
-      return response.data.sentimented_entity_list;
+      return response.data;
     })
     .catch((error) => {
       // in case of failure

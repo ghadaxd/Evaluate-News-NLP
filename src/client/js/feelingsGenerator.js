@@ -1,4 +1,4 @@
-function generateFeelings(feelingsSet) {
+function generateFeelings(feelingsSetData) {
   // Consts
   const resultsTitle = document.getElementById("results-title");
   const feelingsTitle = document.getElementById("feelings-title");
@@ -12,13 +12,14 @@ function generateFeelings(feelingsSet) {
   errorMSG.style = "display: none";
 
   // No feelings identified
-  if (feelingsSet === undefined) {
+  if (feelingsSetData === undefined) {
     errorMSG.style = "display: block";
     errorMSG.innerHTML = "No feelings has been identified.";
-  } else if (feelingsSet.length === 0) {
+  } else if (feelingsSetData.sentimented_entity_list.length === 0) {
     errorMSG.style = "display: block";
     errorMSG.innerHTML = "No feelings has been identified.";
   } else {
+    const feelingsSet = feelingsSetData.sentimented_entity_list;
     const feelingsSetLen = feelingsSet.length;
 
     let feelings = [
