@@ -1,10 +1,10 @@
 function handleSubmit(event) {
   event.preventDefault();
 
-  let formText = document.getElementById("feelings-input").value;
+  let formText = document.getElementById("article-input").value;
   // clean up the text
   formText = formText.trim().toLowerCase();
-  const pattern = /([\/\\0-9().!@#%^&*?><"':|~,_-])+/;
+  const pattern = /([\/\\0-9()!@#%^&*?><":|~_-])+/;
   const checkFlag = pattern.test(formText);
 
   if (checkFlag) {
@@ -17,10 +17,10 @@ function handleSubmit(event) {
     // Fetch api
     const axios = require("axios");
     axios
-      .get("http://localhost:8080/feelings?txt=" + formText)
+      .get("http://localhost:8080/sentiments?txt=" + formText)
       .then((response) => {
         // in case of success (200)
-        app.generateFeelings(response.data);
+        app.generateSentimentAnalysis(response.data);
       })
       .catch((error) => {
         // in case of failure

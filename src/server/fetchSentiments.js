@@ -1,4 +1,4 @@
-const getFeelingsMeaning = (text) => {
+const getSentimentsAnalysis = (text) => {
   const axios = require("axios");
 
   return axios
@@ -7,9 +7,7 @@ const getFeelingsMeaning = (text) => {
         key: process.env.API_KEY,
         lang: "en",
         txt: text,
-        model: "general_en",
         of: "json",
-        ud: "Feelings",
       },
     })
     .then((response) => {
@@ -38,4 +36,4 @@ const getFeelingsMeaning = (text) => {
     });
 };
 
-module.exports = getFeelingsMeaning;
+module.exports = getSentimentsAnalysis;

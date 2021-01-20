@@ -18,33 +18,30 @@ $border-radius-sm: 3em;
   animation-fill-mode: both;
   position: relative;
   margin: 0.5em;
+  text-align: center;
 }
 
-// .selected {
-//   animation: bounce 3s infinite;
-// }
-
-#happiness-circle {
-  background-color: $happiness;
+#polarity-circle {
+  background-color: $polarity;
 }
 
-#sadness-circle {
-  background-color: $sadness;
+#agreement-circle {
+  background-color: $agreement;
   animation-delay: 1s;
 }
 
-#anger-circle {
-  background-color: $anger;
+#subjectivity-circle {
+  background-color: $subjectivity;
   animation-delay: 2s;
 }
 
-#fear-circle {
-  background-color: $fear;
+#confidence-circle {
+  background-color: $confidence;
   animation-delay: 3s;
 }
 
-#disgust-circle {
-  background-color: $disgust;
+#irony-circle {
+  background-color: $irony;
   animation-delay: 4s;
 }
 

@@ -1,50 +1,50 @@
 @import "base.scss";
 
-h2 {
-  color: $primary-font-color;
-  text-align: center;
-  margin-top: 0;
-}
+// h2 {
+//   color: $primary-font-color;
+//   text-align: center;
+//   margin-top: 0;
+// }
 
-h4 {
-  color: $secondary-elem-color;
-  text-align: center;
-  margin-top: 0;
-  width: 100%;
-}
+// h4 {
+//   color: $secondary-elem-color;
+//   text-align: center;
+//   margin-top: 0;
+//   width: 100%;
+// }
 
-#results-title,
-#feelings-quote {
-  display: none;
-}
+// #results-title,
+// #feelings-quote {
+//   display: none;
+// }
 
-.happiness-title {
-  background-color: $happiness;
-}
+// .happiness-title {
+//   background-color: $happiness;
+// }
 
-.sadness-title {
-  background-color: $sadness;
-}
+// .sadness-title {
+//   background-color: $sadness;
+// }
 
-.anger-title {
-  background-color: $anger;
-}
+// .anger-title {
+//   background-color: $anger;
+// }
 
-.fear-title {
-  background-color: $fear;
-}
+// .fear-title {
+//   background-color: $fear;
+// }
 
-.disgust-title {
-  background-color: $disgust;
-}
+// .disgust-title {
+//   background-color: $disgust;
+// }
 
-#feelings-quote {
-  border-left: solid $primary-elem-color 0.3em;
-  color: $primary-font-color;
-  text-align: center;
-  width: 50%;
-  background-color: $secondary-elem-color-opacity;
-}
+// #feelings-quote {
+//   border-left: solid $primary-elem-color 0.3em;
+//   color: $primary-font-color;
+//   text-align: center;
+//   width: 50%;
+//   background-color: $secondary-elem-color-opacity;
+// }
 
 #error-msg {
   color: $primary-font-color;

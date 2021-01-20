@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Naming your feelings</title>
+    <title>Sentiment Analyzer</title>
     <!-- Load Favicon -->
     <link
       rel="apple-touch-icon"
@@ -28,43 +28,36 @@
 
   <body>
     <header>
-      <h1 id="title">How Do You Feel Today?</h1>
+      <h1 id="title">Sentiment Analyzer</h1>
     </header>
     <main>
       <section id="form">
         <form onsubmit="return app.handleSubmit(event)">
-          <input
-            id="feelings-input"
-            class="text-input"
-            type="text"
-            name="input"
-            value=""
-            placeholder="Tell me, how do you feel today..."
+          <textarea
+            id="article-input"
+            rows="15"
+            placeholder="Enter the text to analyze..."
             required
-            maxlength="100"
-          />
+          ></textarea>
           <button
             type="submit"
             class="primary-btn"
             onsubmit="return app.handleSubmit(event)"
           >
-            Name it
+            Analyze
           </button>
         </form>
       </section>
 
-      <section id="feelings">
-        <div class="circle" id="happiness-circle">Happiness</div>
-        <div class="circle" id="sadness-circle">Sadness</div>
-        <div class="circle" id="anger-circle">Anger</div>
-        <div class="circle" id="fear-circle">Fear</div>
-        <div class="circle" id="disgust-circle">Disgust</div>
+      <section id="sentiments">
+        <div class="circle" id="polarity-circle">Polarity</div>
+        <div class="circle" id="agreement-circle">Agreement</div>
+        <div class="circle" id="subjectivity-circle">Subjectivity</div>
+        <div class="circle" id="confidence-circle">Confidence</div>
+        <div class="circle" id="irony-circle">Irony</div>
       </section>
 
-      <section id="results">
-        <h2 id="results-title">Your feelings is</h2>
-        <h4 id="feelings-title"></h4>
-        <blockquote id="feelings-quote"></blockquote>
+      <section id="error-area">
         <p id="error-msg"></p>
       </section>
     </main>

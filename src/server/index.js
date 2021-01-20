@@ -1,11 +1,9 @@
 const dotenv = require("dotenv");
 dotenv.config();
 
-// process.env.API_KEY
-
-var path = require("path");
+// var path = require("path");
 const express = require("express");
-const getFeelingsMeaning = require("./fetchFeelings.js");
+const getSentimentsAnalysis = require("./fetchSentiments.js");
 
 const app = express();
 
@@ -21,8 +19,8 @@ app.get("/", function (req, res) {
   // res.sendFile(path.resolve("src/client/views/index.html"));
 });
 
-app.get("/feelings/:txt?", function (req, res) {
-  getFeelingsMeaning(req.query.txt).then((results) => {
+app.get("/sentiments/:txt?", function (req, res) {
+  getSentimentsAnalysis(req.query.txt).then((results) => {
     res.send(results);
   });
 });

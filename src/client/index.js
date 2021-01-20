@@ -1,4 +1,4 @@
-import { generateFeelings } from "./js/feelingsGenerator";
+import { generateSentimentAnalysis } from "./js/sentimentAnalysisGenerator";
 import { handleSubmit } from "./js/formHandler";
 
 // Loading favicon
@@ -13,4 +13,4 @@ import "./styles/form.scss";
 import "./styles/circle.scss";
 import "./styles/results.scss";
 
-export { generateFeelings, handleSubmit };
+export { generateSentimentAnalysis, handleSubmit };
