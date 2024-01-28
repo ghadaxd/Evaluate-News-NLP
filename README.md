@@ -1,4 +1,5 @@
 # Sentiment Analyzer App
+<img width="838" alt="Screen Shot 2024-01-28 at 4 21 50 PM" src="https://github.com/ghadaxd/Evaluate-News-NLP/assets/68280380/972eba8f-0198-4bb1-9dd8-c13ba642ff13">
 
 ## Overview
 
@@ -16,6 +17,9 @@ This project is part of the Frontend web developer nano degree program.
 - SASS for styling.
 - Axios for calling API.
 - Jest for unit testing.
+
+## Project Live Link
+Check the project [here](https://seasoned-four-chamomile.glitch.me)!
 
 ## Getting started (Instructions)
 
